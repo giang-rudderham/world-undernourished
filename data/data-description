@@ -1,0 +1,3 @@
+I obtained the data from the United Nations’ Millennium Development Goals Indicators database. Two datasets were downloaded: Percentage of Population Undernourished (under Target 1C) and Total Proportion of the Population Using Improved Sanitation Facilities (under Target 7C). I cleaned the .csv data files to remove information unnecessary for visualization such as data series name and foot notes. Data on the population undernourished and the proportion using improved sanitation facilities are unaltered. 
+
+I combined these two data sets with data on longitudes and latitudes of countries. This data set was obtained from Dataset Publishing Language (https://developers.google.com/public-data/docs/canonical/countries_csv). Data combination was done using Excel.
