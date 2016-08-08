@@ -1,8 +1,6 @@
 library(shiny)
 library(leaflet)
 
-
-#version 2: each tab has a separate slider for year
 shinyUI(navbarPage("Population Undernourished, 1991-2015", id = "nav",
 
   tabPanel("World Map",
@@ -49,37 +47,3 @@ shinyUI(navbarPage("Population Undernourished, 1991-2015", id = "nav",
            )
   )
 ))
-
-### Old version: 2 tabs share 1 slider
-# shinyUI(fluidPage(
-#   
-#   titlePanel("Population Undernourished, 1991-2015"),
-#   
-#   tabsetPanel(
-#     tabPanel("World Map", 
-#              leafletOutput("worldmap", width = "100%", height = "475px")
-#     ),
-#     tabPanel("Histogram",
-#              plotOutput("hist", width = "80%", height = "375px")
-#     )
-#   ),
-#   
-#   hr(),
-#   
-#   fluidRow(
-#     shiny::column(10, offset = 4,
-#                   sliderInput("year", "Choose a year:",
-#                               min = 1991, max = 2015, value = 2015,
-#                               animate = TRUE, sep = "")  
-#     )
-#   ),
-#   br(),
-#   br(),
-#   br(),
-#   br(),
-#   br(),
-#   p(strong("Created by:"), "Giang Nguyen 
-#     (giang.huong.nguyen92@gmail.com)"),
-#   p(strong("Data source:"), "United Nations' MDG Indicators Database 
-#     (http://mdgs.un.org/unsd/mdg/Data.aspx)")
-#   ))
